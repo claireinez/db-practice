@@ -1,0 +1,14 @@
+language: node_js
+
+node_js:
+  - "0.12"
+
+script:
+  - npm test
+
+addons:
+  code_climate:
+    repo_token: 2c508b4bdb3d3116a9a0bb5a410653b6c8cad0d821122926cf1d00bbfea097d6
+
+after_success:
+  - npm run codeclimate
