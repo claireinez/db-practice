@@ -19,3 +19,5 @@ server.views({
 server.start(function () {
 	console.log("Server is running at: " + server.info.uri);
 });
+
+module.exports = server;
