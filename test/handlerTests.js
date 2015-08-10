@@ -25,7 +25,7 @@ function decorate (reqDecorations, repDecorations, callback){
   };
 }
 
-var loginDispatch = decorate(
+var homeDispatch = decorate(
   // {
   //   auth: {
   //     session: {set: function(credentials){expect(credentials).to.exist();}},
@@ -38,4 +38,4 @@ var loginDispatch = decorate(
   handlers.homeHandler
 );
 
-Shot.inject(loginDispatch, {method: 'GET', url: '/'});
+Shot.inject(homeDispatch, {method: 'GET', url: '/'});
